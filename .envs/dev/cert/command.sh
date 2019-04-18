@@ -11,3 +11,4 @@ if [[ ! -f "/files/.htpasswd" ]]; then
     /scripts/create-htpasswd.sh
 fi
 
+chmod a+xwr -R /files

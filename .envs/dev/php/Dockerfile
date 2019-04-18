@@ -65,6 +65,10 @@ COPY common/wait-for-it.sh /scripts/
 
 RUN chmod a+x /scripts/*.sh
 
+#add new user
+RUN useradd -ms /bin/bash newuser
+USER newuser
+
 EXPOSE 9000
 
 ENTRYPOINT ["/scripts/entrypoint.sh"]

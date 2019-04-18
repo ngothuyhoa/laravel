@@ -10,3 +10,4 @@ if [ ! -d "$standardPath" ]; then
 fi
 
 php-fpm
+
